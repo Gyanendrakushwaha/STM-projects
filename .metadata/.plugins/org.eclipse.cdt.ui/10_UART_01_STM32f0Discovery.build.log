@@ -1,0 +1,10 @@
+16:52:08 **** Incremental Build of configuration Debug for project 10_UART_01_STM32f0Discovery ****
+make -j8 all 
+arm-none-eabi-size   10_UART_01_STM32f0Discovery.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8100	     80	   1704	   9884	   269c	10_UART_01_STM32f0Discovery.elf
+Finished building: default.size.stdout
+ 
+
+16:52:08 Build Finished. 0 errors, 0 warnings. (took 490ms)
+

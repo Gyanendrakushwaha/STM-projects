@@ -1,0 +1,3 @@
+006spi_tx_testing.c:12:6:SPI2_GPIOInit	24	static
+006spi_tx_testing.c:41:6:SPI2_Inits	24	static
+006spi_tx_testing.c:55:6:main	16	static

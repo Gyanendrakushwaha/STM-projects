@@ -1,0 +1,72 @@
+13:12:21 **** Incremental Build of configuration Debug for project 09_LCDdisplay_STM32f0Discovery ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:17:8: error: unknown type name 'TIM_HandleTypeDef'
+   17 | extern TIM_HandleTypeDef timer;
+      |        ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:18:13: error: unknown type name 'uint16_t'
+   18 | void delay (uint16_t us)
+      |             ^~~~~~~~
+../Core/Src/main.c: In function 'send_to_lcd':
+../Core/Src/main.c:26:5: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   26 |     HAL_GPIO_WritePin(RS_GPIO_Port, RS_Pin, rs);  // rs = 1 for data, rs=0 for command
+      |     ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:26:23: error: 'RS_GPIO_Port' undeclared (first use in this function)
+   26 |     HAL_GPIO_WritePin(RS_GPIO_Port, RS_Pin, rs);  // rs = 1 for data, rs=0 for command
+      |                       ^~~~~~~~~~~~
+../Core/Src/main.c:26:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:26:37: error: 'RS_Pin' undeclared (first use in this function); did you mean 'RS_PIN'?
+   26 |     HAL_GPIO_WritePin(RS_GPIO_Port, RS_Pin, rs);  // rs = 1 for data, rs=0 for command
+      |                                     ^~~~~~
+      |                                     RS_PIN
+../Core/Src/main.c:28:23: error: 'D7_GPIO_Port' undeclared (first use in this function)
+   28 |     HAL_GPIO_WritePin(D7_GPIO_Port, D7_Pin, ((data>>3)&0x01));
+      |                       ^~~~~~~~~~~~
+../Core/Src/main.c:28:37: error: 'D7_Pin' undeclared (first use in this function); did you mean 'D7_PIN'?
+   28 |     HAL_GPIO_WritePin(D7_GPIO_Port, D7_Pin, ((data>>3)&0x01));
+      |                                     ^~~~~~
+      |                                     D7_PIN
+../Core/Src/main.c:29:23: error: 'D6_GPIO_Port' undeclared (first use in this function)
+   29 |     HAL_GPIO_WritePin(D6_GPIO_Port, D6_Pin, ((data>>2)&0x01));
+      |                       ^~~~~~~~~~~~
+../Core/Src/main.c:29:37: error: 'D6_Pin' undeclared (first use in this function); did you mean 'D6_PIN'?
+   29 |     HAL_GPIO_WritePin(D6_GPIO_Port, D6_Pin, ((data>>2)&0x01));
+      |                                     ^~~~~~
+      |                                     D6_PIN
+../Core/Src/main.c:30:23: error: 'D5_GPIO_Port' undeclared (first use in this function)
+   30 |     HAL_GPIO_WritePin(D5_GPIO_Port, D5_Pin, ((data>>1)&0x01));
+      |                       ^~~~~~~~~~~~
+../Core/Src/main.c:30:37: error: 'D5_Pin' undeclared (first use in this function); did you mean 'D5_PIN'?
+   30 |     HAL_GPIO_WritePin(D5_GPIO_Port, D5_Pin, ((data>>1)&0x01));
+      |                                     ^~~~~~
+      |                                     D5_PIN
+../Core/Src/main.c:31:23: error: 'D4_GPIO_Port' undeclared (first use in this function)
+   31 |     HAL_GPIO_WritePin(D4_GPIO_Port, D4_Pin, ((data>>0)&0x01));
+      |                       ^~~~~~~~~~~~
+../Core/Src/main.c:31:37: error: 'D4_Pin' undeclared (first use in this function); did you mean 'D4_PIN'?
+   31 |     HAL_GPIO_WritePin(D4_GPIO_Port, D4_Pin, ((data>>0)&0x01));
+      |                                     ^~~~~~
+      |                                     D4_PIN
+../Core/Src/main.c:36:23: error: 'EN_GPIO_Port' undeclared (first use in this function)
+   36 |     HAL_GPIO_WritePin(EN_GPIO_Port, EN_Pin, 1);
+      |                       ^~~~~~~~~~~~
+../Core/Src/main.c:36:37: error: 'EN_Pin' undeclared (first use in this function); did you mean 'EN_PIN'?
+   36 |     HAL_GPIO_WritePin(EN_GPIO_Port, EN_Pin, 1);
+      |                                     ^~~~~~
+      |                                     EN_PIN
+../Core/Src/main.c: In function 'lcd_init':
+../Core/Src/main.c:82:5: warning: implicit declaration of function 'HAL_Delay' [-Wimplicit-function-declaration]
+   82 |     HAL_Delay(50);  // wait for >40ms
+      |     ^~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  107 |   lcd_send_string("HELLO ");
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:114:3: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  114 |   lcd_clear();
+      |   ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+13:12:22 Build Failed. 15 errors, 4 warnings. (took 734ms)
+

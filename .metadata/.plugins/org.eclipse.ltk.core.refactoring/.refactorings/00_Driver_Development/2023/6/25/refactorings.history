@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;00_Driver_Development/Driver&apos; to &apos;drivers&apos;" description="Rename resource &apos;Driver&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Driver" name="drivers" stamp="1687332696050" updateReferences="true"/>
+</session>

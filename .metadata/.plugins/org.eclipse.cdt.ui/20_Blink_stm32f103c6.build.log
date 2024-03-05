@@ -1,0 +1,20 @@
+12:07:42 **** Incremental Build of configuration Debug for project 20_Blink_stm32f103c6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20_Blink_stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\20_Blink_stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20_Blink_stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20_Blink_stm32f103c6.elf
+ 
+arm-none-eabi-size   20_Blink_stm32f103c6.elf 
+arm-none-eabi-objdump -h -S  20_Blink_stm32f103c6.elf  > "20_Blink_stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  20_Blink_stm32f103c6.elf  "20_Blink_stm32f103c6.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4500	     20	   1572	   6092	   17cc	20_Blink_stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20_Blink_stm32f103c6.list
+ 
+Finished building: 20_Blink_stm32f103c6.bin
+ 
+
+12:07:44 Build Finished. 0 errors, 0 warnings. (took 1s.436ms)
+

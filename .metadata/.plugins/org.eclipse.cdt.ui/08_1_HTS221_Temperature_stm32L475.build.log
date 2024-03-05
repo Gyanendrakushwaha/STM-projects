@@ -1,0 +1,10 @@
+13:18:17 **** Incremental Build of configuration Debug for project 08_1_HTS221_Temperature_stm32L475 ****
+make -j8 all 
+arm-none-eabi-size   08_1_HTS221_Temperature_stm32L475.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24364	    136	   2040	  26540	   67ac	08_1_HTS221_Temperature_stm32L475.elf
+Finished building: default.size.stdout
+ 
+
+13:18:18 Build Finished. 0 errors, 0 warnings. (took 1s.24ms)
+

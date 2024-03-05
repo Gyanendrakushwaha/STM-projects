@@ -1,0 +1,20 @@
+11:19:27 **** Incremental Build of configuration Debug for project LCD_Display_GPT ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LCD_Display_GPT.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\LCD_Display_GPT\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_Display_GPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_Display_GPT.elf
+ 
+arm-none-eabi-size   LCD_Display_GPT.elf 
+arm-none-eabi-objdump -h -S  LCD_Display_GPT.elf  > "LCD_Display_GPT.list"
+arm-none-eabi-objcopy  -O binary  LCD_Display_GPT.elf  "LCD_Display_GPT.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5696	     20	   1572	   7288	   1c78	LCD_Display_GPT.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_Display_GPT.bin
+ 
+Finished building: LCD_Display_GPT.list
+ 
+
+11:19:32 Build Finished. 0 errors, 0 warnings. (took 5s.189ms)
+

@@ -1,0 +1,754 @@
+12:34:56 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/001led_toggle.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/001led_toggle.d" -MT"Src/001led_toggle.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/001led_toggle.o"
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1360	      8	   1568	   2936	    b78	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+Finished building: 00_Driver_Development.list
+ 
+ 
+16:39:49 **** Clean-only build of configuration Debug for project 00_Driver_Development ****
+make -j8 clean 
+rm -rf  default.size.stdout  00_Driver_Development.list  00_Driver_Development.elf  ./drivers/Src/stm32f0xx_gpio_driver.o ./drivers/Src/stm32f0xx_spi_driver.o  ./Startup/startup_stm32f051r8tx.o  ./Src/001led_toggle.o ./Src/syscalls.o ./Src/sysmem.o  ./Startup/startup_stm32f051r8tx.d  ./drivers/Src/stm32f0xx_gpio_driver.d ./drivers/Src/stm32f0xx_spi_driver.d  ./Src/001led_toggle.d ./Src/syscalls.d ./Src/sysmem.d  00_Driver_Development.bin  00_Driver_Development.elf
+ 
+16:39:52 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f051r8tx.d" -MT"Startup/startup_stm32f051r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f051r8tx.o" "../Startup/startup_stm32f051r8tx.s"
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:45:23: error: 'SPI_Config_t' {aka 'struct <anonymous>'} has no member named 'SPI_SCLkSpeed'; did you mean 'SPI_SclkSpeed'?
+   45 |  SPI2handle.SPIConfig.SPI_SCLkSpeed = SPI_SCLK_SPEED_DIV2; //Generates sereal clock OF 8 Mhz
+      |                       ^~~~~~~~~~~~~
+      |                       SPI_SclkSpeed
+../Src/006spi_tx_testing.c:47:32: error: 'SPI_CPOL_LOW' undeclared (first use in this function); did you mean 'SPI_CPHA_LOW'?
+   47 |  SPI2handle.SPIConfig.SPI_CPOL=SPI_CPOL_LOW;
+      |                                ^~~~~~~~~~~~
+      |                                SPI_CPHA_LOW
+../Src/006spi_tx_testing.c:47:32: note: each undeclared identifier is reported only once for each function it appears in
+../Src/006spi_tx_testing.c:49:31: error: 'SPI_SSM_EN' undeclared (first use in this function); did you mean 'SPI_SSM_SW'?
+   49 |  SPI2handle.SPIConfig.SPI_SSM=SPI_SSM_EN;  //software slave management for NSS pin
+      |                               ^~~~~~~~~~
+      |                               SPI_SSM_SW
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:57:21: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   57 |  SPI_SendData(SPI2, user_data,strlen(user_data));
+      |                     ^~~~~~~~~
+      |                     |
+      |                     char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:300,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:119:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  119 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/006spi_tx_testing.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+16:56:41 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:47:32: error: 'SPI_CPOL_LOW' undeclared (first use in this function); did you mean 'SPI_CPHA_LOW'?
+   47 |  SPI2handle.SPIConfig.SPI_CPOL=SPI_CPOL_LOW;
+      |                                ^~~~~~~~~~~~
+      |                                SPI_CPHA_LOW
+../Src/006spi_tx_testing.c:47:32: note: each undeclared identifier is reported only once for each function it appears in
+../Src/006spi_tx_testing.c:49:31: error: 'SPI_SSM_EN' undeclared (first use in this function); did you mean 'SPI_SSM_SW'?
+   49 |  SPI2handle.SPIConfig.SPI_SSM=SPI_SSM_EN;  //software slave management for NSS pin
+      |                               ^~~~~~~~~~
+      |                               SPI_SSM_SW
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:57:21: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   57 |  SPI_SendData(SPI2, user_data,strlen(user_data));
+      |                     ^~~~~~~~~
+      |                     |
+      |                     char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:300,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:119:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  119 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/006spi_tx_testing.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+11:37:38 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:57:21: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   57 |  SPI_SendData(SPI2, user_data,strlen(user_data));
+      |                     ^~~~~~~~~
+      |                     |
+      |                     char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:300,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:132:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  132 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1588	      8	   1568	   3164	    c5c	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+ 
+Finished building: 00_Driver_Development.list
+ 
+11:39:04 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:57:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   57 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:300,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:132:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  132 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+   text	   data	    bss	    dec	    hex	filename
+   1584	      8	   1568	   3160	    c58	00_Driver_Development.elf
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+Finished building: 00_Driver_Development.list
+ 
+ 
+12:27:54 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../drivers/Src/stm32f0xx_spi_driver.c: In function 'SPI_SendData':
+../drivers/Src/stm32f0xx_spi_driver.c:168:23: error: 'SPI_CR1_DFF' undeclared (first use in this function); did you mean 'SPI_CR2_DS'?
+  168 |   if(pSPIx->CR1 & (1<<SPI_CR1_DFF))
+      |                       ^~~~~~~~~~~
+      |                       SPI_CR2_DS
+../drivers/Src/stm32f0xx_spi_driver.c:168:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [drivers/Src/subdir.mk:22: drivers/Src/stm32f0xx_spi_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:46:22: error: 'SPI_Config_t' {aka 'struct <anonymous>'} has no member named 'SPI_DFF'
+   46 |  SPI2handle.SPIConfig.SPI_DFF = SPI_DFF_8BITS;
+      |                      ^
+../Src/006spi_tx_testing.c:46:33: error: 'SPI_DFF_8BITS' undeclared (first use in this function); did you mean 'SPI_DS_8BITS'?
+   46 |  SPI2handle.SPIConfig.SPI_DFF = SPI_DFF_8BITS;
+      |                                 ^~~~~~~~~~~~~
+      |                                 SPI_DS_8BITS
+../Src/006spi_tx_testing.c:46:33: note: each undeclared identifier is reported only once for each function it appears in
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:57:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   57 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:303,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:142:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  142 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/006spi_tx_testing.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:29:20 **** Clean-only build of configuration Debug for project 00_Driver_Development ****
+make -j8 clean 
+rm -rf  default.size.stdout  00_Driver_Development.list  00_Driver_Development.elf  ./drivers/Src/stm32f0xx_gpio_driver.o ./drivers/Src/stm32f0xx_spi_driver.o  ./Startup/startup_stm32f051r8tx.o  ./Src/006spi_tx_testing.o ./Src/syscalls.o ./Src/sysmem.o  ./Startup/startup_stm32f051r8tx.d  ./drivers/Src/stm32f0xx_gpio_driver.d ./drivers/Src/stm32f0xx_spi_driver.d  ./Src/006spi_tx_testing.d ./Src/syscalls.d ./Src/sysmem.d  00_Driver_Development.bin  00_Driver_Development.elf
+ 
+12:29:20 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f051r8tx.d" -MT"Startup/startup_stm32f051r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f051r8tx.o" "../Startup/startup_stm32f051r8tx.s"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Startup/startup_stm32f051r8tx.o: in function `LoopFillZerobss':
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Debug/../Startup/startup_stm32f051r8tx.s:98: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: 00_Driver_Development.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:30:40 **** Clean-only build of configuration Debug for project 00_Driver_Development ****
+make -j8 clean 
+rm -rf  default.size.stdout  00_Driver_Development.list  00_Driver_Development.elf  ./drivers/Src/stm32f0xx_gpio_driver.o ./drivers/Src/stm32f0xx_spi_driver.o  ./Startup/startup_stm32f051r8tx.o  ./Src/syscalls.o ./Src/sysmem.o  ./Startup/startup_stm32f051r8tx.d  ./drivers/Src/stm32f0xx_gpio_driver.d ./drivers/Src/stm32f0xx_spi_driver.d  ./Src/syscalls.d ./Src/sysmem.d  00_Driver_Development.bin  00_Driver_Development.elf
+ 
+12:30:40 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f051r8tx.d" -MT"Startup/startup_stm32f051r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f051r8tx.o" "../Startup/startup_stm32f051r8tx.s"
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:53:8: warning: unused variable 'user_data' [-Wunused-variable]
+   53 |  char *user_data="hello world";
+      |        ^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1400	      8	   1568	   2976	    ba0	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+ 
+Finished building: 00_Driver_Development.list
+ 
+12:31:03 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1380	      8	   1568	   2956	    b8c	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+Finished building: 00_Driver_Development.list
+ 
+ 
+12:37:11 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:56:20: error: 'user_data' undeclared (first use in this function)
+   56 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+../Src/006spi_tx_testing.c:56:20: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:25: Src/006spi_tx_testing.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:37:25 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:56:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   56 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:303,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1580	      8	   1568	   3156	    c54	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+ 
+Finished building: 00_Driver_Development.list
+ 
+12:37:27 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1580	      8	   1568	   3156	    c54	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+12:37:32 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1580	      8	   1568	   3156	    c54	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+12:50:02 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../drivers/Src/stm32f0xx_spi_driver.c: In function 'SPI_PeripheralControl':
+../drivers/Src/stm32f0xx_spi_driver.c:304:6: error: 'EnorDi' undeclared (first use in this function); did you mean 'EnOrDi'?
+  304 |   if(EnorDi == Enable)
+      |      ^~~~~~
+      |      EnOrDi
+../drivers/Src/stm32f0xx_spi_driver.c:304:6: note: each undeclared identifier is reported only once for each function it appears in
+../drivers/Src/stm32f0xx_spi_driver.c:304:16: error: 'Enable' undeclared (first use in this function)
+  304 |   if(EnorDi == Enable)
+      |                ^~~~~~
+../drivers/Src/stm32f0xx_spi_driver.c: At top level:
+../drivers/Src/stm32f0xx_spi_driver.c:312:3: error: expected identifier or '(' before '/' token
+  312 |  */
+      |   ^
+make: *** [drivers/Src/subdir.mk:22: drivers/Src/stm32f0xx_spi_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:40:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   40 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:61:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   61 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:304,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:50:51 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+../drivers/Src/stm32f0xx_spi_driver.c: In function 'SPI_PeripheralControl':
+../drivers/Src/stm32f0xx_spi_driver.c:304:6: error: 'EnorDi' undeclared (first use in this function); did you mean 'EnOrDi'?
+  304 |   if(EnorDi == ENABLE)
+      |      ^~~~~~
+      |      EnOrDi
+../drivers/Src/stm32f0xx_spi_driver.c:304:6: note: each undeclared identifier is reported only once for each function it appears in
+../drivers/Src/stm32f0xx_spi_driver.c: At top level:
+../drivers/Src/stm32f0xx_spi_driver.c:312:3: error: expected identifier or '(' before '/' token
+  312 |  */
+      |   ^
+make: *** [drivers/Src/subdir.mk:22: drivers/Src/stm32f0xx_spi_driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:51:05 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+../drivers/Src/stm32f0xx_spi_driver.c:312:3: error: expected identifier or '(' before '/' token
+  312 |  */
+      |   ^
+make: *** [drivers/Src/subdir.mk:22: drivers/Src/stm32f0xx_spi_driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:51:18 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1652	      8	   1568	   3228	    c9c	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+ 
+Finished building: 00_Driver_Development.list
+ 
+13:11:54 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1652	      8	   1568	   3228	    c9c	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+13:14:00 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1652	      8	   1568	   3228	    c9c	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+13:37:15 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:41:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   41 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:62:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   62 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:304,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1660	      8	   1568	   3236	    ca4	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.list
+ 
+Finished building: 00_Driver_Development.bin
+ 
+13:37:31 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1660	      8	   1568	   3236	    ca4	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+13:57:50 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:42:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   42 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:63:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   63 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:304,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1660	      8	   1568	   3236	    ca4	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+ 
+Finished building: 00_Driver_Development.list
+ 
+13:58:13 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1660	      8	   1568	   3236	    ca4	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+16:51:41 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_gpio_driver.d" -MT"drivers/Src/stm32f0xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:42:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   42 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:63:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   63 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:304,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1660	      8	   1568	   3236	    ca4	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+ 
+Finished building: 00_Driver_Development.list
+ 
+16:51:49 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1660	      8	   1568	   3236	    ca4	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+16:54:17 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'SPI2_Inits':
+../Src/006spi_tx_testing.c:42:15: warning: variable 'SPI2handle' set but not used [-Wunused-but-set-variable]
+   42 |  SPI_Handle_t SPI2handle;
+      |               ^~~~~~~~~~
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:54:8: warning: unused variable 'user_data' [-Wunused-variable]
+   54 |  char *user_data="hello world";
+      |        ^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1408	      8	   1568	   2984	    ba8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+Finished building: 00_Driver_Development.list
+ 
+ 
+16:54:42 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1408	      8	   1568	   2984	    ba8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+17:00:18 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:56:8: warning: unused variable 'user_data' [-Wunused-variable]
+   56 |  char *user_data="hello world";
+      |        ^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1748	      8	   1568	   3324	    cfc	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+ 
+Finished building: 00_Driver_Development.list
+ 
+17:00:36 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1748	      8	   1568	   3324	    cfc	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+17:03:01 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1748	      8	   1568	   3324	    cfc	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+17:03:17 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1748	      8	   1568	   3324	    cfc	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+17:04:01 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:65:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   65 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:304,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   2000	      8	   1568	   3576	    df8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+Finished building: 00_Driver_Development.list
+ 
+ 
+17:04:31 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2000	      8	   1568	   3576	    df8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+17:06:30 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:65:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   65 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:304,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   2000	      8	   1568	   3576	    df8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+ 
+Finished building: 00_Driver_Development.list
+ 
+17:09:57 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:65:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   65 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:304,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+   text	   data	    bss	    dec	    hex	filename
+   2000	      8	   1568	   3576	    df8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+Finished building: 00_Driver_Development.list
+ 
+ 
+17:10:17 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2000	      8	   1568	   3576	    df8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+17:10:30 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2000	      8	   1568	   3576	    df8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
+17:16:32 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f0xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f0xx_spi_driver.d" -MT"drivers/Src/stm32f0xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f0xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/006spi_tx_testing.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F0DISCOVERY -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -c -I../Inc -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/Inc" -I"C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/006spi_tx_testing.d" -MT"Src/006spi_tx_testing.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/006spi_tx_testing.o"
+../Src/006spi_tx_testing.c: In function 'main':
+../Src/006spi_tx_testing.c:65:20: warning: pointer targets in passing argument 2 of 'SPI_SendData' differ in signedness [-Wpointer-sign]
+   65 |  SPI_SendData(SPI2,user_data,strlen(user_data));
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx.h:304,
+                 from ../Src/006spi_tx_testing.c:10:
+C:/Users/158184/STM32CubeIDE/workspace_1.7.0/00_Driver_Development/drivers/Inc/stm32f0xx_spi_driver.h:144:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  144 | void SPI_SendData(SPI_RegDef_t *pSPIx,uint8_t *pTxBuffer,uint32_t Len);
+      |                                       ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "00_Driver_Development.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\158184\STM32CubeIDE\workspace_1.7.0\00_Driver_Development\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="00_Driver_Development.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 00_Driver_Development.elf
+ 
+arm-none-eabi-size   00_Driver_Development.elf 
+arm-none-eabi-objdump -h -S  00_Driver_Development.elf  > "00_Driver_Development.list"
+   text	   data	    bss	    dec	    hex	filename
+   2000	      8	   1568	   3576	    df8	00_Driver_Development.elf
+arm-none-eabi-objcopy  -O binary  00_Driver_Development.elf  "00_Driver_Development.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 00_Driver_Development.bin
+Finished building: 00_Driver_Development.list
+ 
+ 
+17:22:19 **** Incremental Build of configuration Debug for project 00_Driver_Development ****
+make -j8 all 
+arm-none-eabi-size   00_Driver_Development.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2000	      8	   1568	   3576	    df8	00_Driver_Development.elf
+Finished building: default.size.stdout
+ 
